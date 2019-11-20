@@ -1,0 +1,22 @@
+{
+  "name": "node_starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client:build": "cd client && npm run build",
+    "client:install": "cd client && npm install",
+    "client:start": "cd client && npm start",
+    "develop": "concurrently \"npm run client:start\" \"nodemon npm start\"",
+    "postinstall": "npm run client:install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  }
+}
